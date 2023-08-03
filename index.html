@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>yuyeh的個人網頁</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <nav>
       <ul>
         <li><a href="#">關於yuyeh</a></li>
+        <li><a href="./page/contact.html">聯絡方式</a></li>
         <li><a href="#"></a>圍棋網站</li>
         <li><a href="#"></a>日本旅遊網</li>
       </ul>
@@ -19,9 +27,70 @@
         <div class="info">
           <h1>嗨，我是Yuyeh!</h1>
           <h2>我是來自台灣的網頁前端工程師</h2>
+
+          <a href="./page/contact.html">了解更多</a>
         </div>
         <img src="./Image/" alt="個人照片" />
       </section>
+
+      <section class="about-me">
+        <div class="desc">
+          <h2>關於我的一些事情</h2>
+          <p>
+            我在TKU完成學位，主要興趣在網頁開發。
+            我在大學之前，完全沒有寫過程式的經驗。
+            在眾多不同的科系當中，我選擇資訊工程系，
+            因為我從小就對電腦有濃厚的興趣。
+          </p>
+        </div>
+
+        <div class="progress-area">
+          <p>我的主要技能是JavaScript, Web Development, Java以及Python</p>
+          <div class="progress-bar-area">
+            <p>JavaScript, Web Development</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
+            </div>
+
+            <p>Java</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              ></div>
+            </div>
+
+            <p>Python</p>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 25%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
