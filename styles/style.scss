@@ -107,7 +107,6 @@ body {
     }
 
     section.resume {
-      overflow: hidden;
       display: flex;
       flex-wrap: wrap;
       padding: 2rem;
@@ -167,6 +166,55 @@ body {
           left: -100px;
           z-index: -1;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    main {
+      section.main-area {
+        div.info {
+          padding: 1rem;
+        }
+        img {
+          width: 90%;
+        }
+      }
+      section.about-me {
+        padding: 1rem 0.5rem;
+        div.desc {
+          width: 80%;
+        }
+        div.progress-area {
+          width: 80%;
+        }
+      }
+      section.resume {
+        overflow-x: auto;
+        section.table {
+          min-width: 800px;
+        }
+        section.picture {
+          width: 90%;
+        }
+        div.greenRect,
+        div.greenRect2,
+        div.greenRect3 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    nav {
+      position: static;
+      ul {
+        flex-direction: column;
       }
     }
   }

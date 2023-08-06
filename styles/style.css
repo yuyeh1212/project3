@@ -90,7 +90,6 @@ body main section.about-me div.progress-area .progress-bar-area {
   margin-top: 2rem;
 }
 body main section.resume {
-  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
@@ -145,4 +144,44 @@ body main section.resume section.picture div.greenRect3 {
   top: 0px;
   left: -100px;
   z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.main-area div.info {
+    padding: 1rem;
+  }
+  body main section.main-area img {
+    width: 90%;
+  }
+  body main section.about-me {
+    padding: 1rem 0.5rem;
+  }
+  body main section.about-me div.desc {
+    width: 80%;
+  }
+  body main section.about-me div.progress-area {
+    width: 80%;
+  }
+  body main section.resume {
+    overflow-x: auto;
+  }
+  body main section.resume section.table {
+    min-width: 800px;
+  }
+  body main section.resume section.picture {
+    width: 90%;
+  }
+  body main section.resume div.greenRect,
+  body main section.resume div.greenRect2,
+  body main section.resume div.greenRect3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
